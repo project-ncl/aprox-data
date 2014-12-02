@@ -9,7 +9,7 @@ class ProductRepositoryRule extends AbstractAutoProxRule
 {
     boolean matches( String name ){
         // format: product+<prod-name>+<prod-ver>
-        name.startsWith( "product+" ) && name.split('+').length == 3
+        name.startsWith( "product+" ) && name.split('\\+').length == 3
     }
 
     HostedRepository createHostedRepository( String named )
@@ -23,7 +23,7 @@ class ProductRepositoryRule extends AbstractAutoProxRule
 
     Group createGroup( String named )
     {
-        def match = named.split('+')
+        def match = named.split('\\+')
         //def productPrefix = match[0]
 
         def prodName = match[1]

@@ -8,8 +8,8 @@ import org.commonjava.aprox.model.*;
 class BuildRepositoryRule extends AbstractAutoProxRule
 {
     boolean matches( String name ){
-        // format: build-<prod-name>-<prod-ver>-<proj-name>-<number>
-        name.startsWith( "build+" ) && name.split('+').length == 5
+        // format: build+<prod-name>+<prod-ver>+<proj-name>+<number>
+        name.startsWith( "build+" ) && name.split('\\+').length == 5
     }
 
     HostedRepository createHostedRepository( String named )
@@ -23,7 +23,7 @@ class BuildRepositoryRule extends AbstractAutoProxRule
 
     Group createGroup( String named )
     {
-        def match = named.split('+')
+        def match = named.split('\\+')
         //def buildPrefix = match[0]
 
         def prodName = match[1]
@@ -41,8 +41,8 @@ class BuildRepositoryRule extends AbstractAutoProxRule
     RemoteRepository createRemoteRepository( String name )
         throws AutoProxRuleException, MalformedURLException
     {
-        def match = named.split('+')
-        new RemoteRepository( name, 'http://localhost/api/group/product-${match[1]}-${match[2]}' );
+        def match = named.split('\\+')
+        new RemoteRepository( name, 'http://localhost/api/group/product+${match[1]}+${match[2]}' );
     }
 }
 
