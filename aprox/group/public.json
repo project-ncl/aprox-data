@@ -1,6 +1,9 @@
 {
   "key" : "group:public",
-  "constituents" : [ "remote:central" ],
+  "metadata" : {
+    "changelog" : "adding jboss.org remote to public group"
+  },
+  "constituents" : [ "remote:central", "remote:jboss.org-public" ],
   "doctype" : "group",
   "name" : "public"
 }
