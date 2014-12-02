@@ -38,11 +38,11 @@ class BuildRepositoryRule extends AbstractAutoProxRule
         g
     }
 
-    RemoteRepository createRemoteRepository( String name )
+    RemoteRepository createRemoteRepository( String named )
         throws AutoProxRuleException, MalformedURLException
     {
         def match = named.split('\\+')
-        new RemoteRepository( name, 'http://localhost/api/group/product+${match[1]}+${match[2]}' );
+        new RemoteRepository( named, 'http://localhost/api/group/product+${match[1]}+${match[2]}' );
     }
 }
 
