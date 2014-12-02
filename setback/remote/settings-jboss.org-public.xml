@@ -2,27 +2,20 @@
 <settings>
 
 <!-- 
-This settings.xml for group:public incorporates the following stores from AProx:
-  * remote:central
+This settings.xml for remote:jboss.org-public incorporates the following stores from AProx:
   * remote:jboss.org-public
  -->
-  <localRepository>/root/.m2/repository-group-public</localRepository>
-  <profiles>
+  <localRepository>/root/.m2/repository-remote-jboss.org-public</localRepository>
+  <mirrors>
+    <mirror>
+      <mirrorOf>central</mirrorOf>
+      <id>disabled-central</id>
+      <url>http://not.used:99999/</url>
+    </mirror>
+  </mirrors>  <profiles>
     <profile>
       <id>aprox-repos</id>
       <repositories>
-        <repository>
-          <id>central</id>
-          <url>http://repo1.maven.apache.org/maven2/</url>
-          <name>null</name>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <!-- TODO: Not sure how to detect this... -->
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </repository>
         <repository>
           <id>jboss.org-public</id>
           <url>https://repository.jboss.org/nexus/content/groups/public</url>
@@ -37,18 +30,6 @@ This settings.xml for group:public incorporates the following stores from AProx:
         </repository>
       </repositories>
       <pluginRepositories>
-        <pluginRepository>
-          <id>central-plugins</id>
-          <url>http://repo1.maven.apache.org/maven2/</url>
-          <name>null - PluginRepository</name>
-          <releases>
-            <enabled>true</enabled>
-          </releases>
-          <!-- TODO: Not sure how to detect this... -->
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-        </pluginRepository>
         <pluginRepository>
           <id>jboss.org-public-plugins</id>
           <url>https://repository.jboss.org/nexus/content/groups/public</url>
