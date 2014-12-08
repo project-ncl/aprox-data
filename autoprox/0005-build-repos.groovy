@@ -32,17 +32,19 @@ class BuildRepositoryRule extends AbstractAutoProxRule
         def projBuild = match[4]
 
         Group g = new Group( named );
-        g.addConstituent( new StoreKey( StoreType.remote, named ) )
+        g.addConstituent( new StoreKey( StoreType.group, "product+${prodName}+${prodVer}" ) )
         g.addConstituent( new StoreKey( StoreType.hosted, named ) )
         
         g
     }
 
-    RemoteRepository createRemoteRepository( String named )
-        throws AutoProxRuleException, MalformedURLException
-    {
-        def match = named.split('\\+')
-        new RemoteRepository( named, "http://localhost/api/group/product+${match[1]}+${match[2]}" );
-    }
+    // FIXME: Need to reference product space via remote for tracking things in this build.
+//    RemoteRepository createRemoteRepository( String named )
+//        throws AutoProxRuleException, MalformedURLException
+//    {
+//        def match = named.split('\\+')
+//
+//        new RemoteRepository( named, "http://localhost/api/group/product+${match[1]}+${match[2]}" );
+//    }
 }
 
