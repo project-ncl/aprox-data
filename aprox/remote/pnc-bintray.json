@@ -1,0 +1,17 @@
+{
+  "key" : "remote:pnc-bintray",
+  "description" : "holds forked versions of things for pnc app that we need for the demo",
+  "metadata" : {
+    "changelog" : "adding bintray repo"
+  },
+  "host" : "dl.bintray.com",
+  "port" : 80,
+  "doctype" : "remote",
+  "name" : "pnc-bintray",
+  "url" : "http://dl.bintray.com/rnc/maven",
+  "timeout_seconds" : 0,
+  "nfc_timeout_seconds" : 0,
+  "is_passthrough" : false,
+  "cache_timeout_seconds" : 0,
+  "proxy_port" : 0
+}
