@@ -32,8 +32,8 @@ class BuildRepositoryRule extends AbstractAutoProxRule
         def projBuild = match[4]
 
         Group g = new Group( named );
-        g.addConstituent( new StoreKey( StoreType.group, "product+${prodName}+${prodVer}" ) )
         g.addConstituent( new StoreKey( StoreType.hosted, named ) )
+        g.addConstituent( new StoreKey( StoreType.group, "product+${prodName}+${prodVer}" ) )
         
         g
     }
