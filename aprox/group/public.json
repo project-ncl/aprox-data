@@ -1,9 +1,9 @@
 {
   "key" : "group:public",
   "metadata" : {
-    "changelog" : "adding jboss.org remote to public group"
+    "changelog" : "adding bintray repo to public group"
   },
-  "constituents" : [ "remote:central", "remote:jboss.org-public" ],
+  "constituents" : [ "remote:central", "remote:jboss.org-public", "remote:pnc-bintray" ],
   "doctype" : "group",
   "name" : "public"
 }
