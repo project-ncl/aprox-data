@@ -31,7 +31,7 @@ class ProductRepositoryRule extends AbstractAutoProxRule
 
         Group g = new Group( named );
         g.addConstituent( new StoreKey( StoreType.remote, named ) )
-//        g.addConstituent( new StoreKey( StoreType.hosted, named ) )
+        g.addConstituent( new StoreKey( StoreType.hosted, named ) )
 
         // TODO: For demo only, we should probably control this more closely in the product space.
         g.addConstituent( new StoreKey( StoreType.group, 'public' ) )
