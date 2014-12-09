@@ -1,6 +1,6 @@
 {
   "key" : "group:product+PNC-Product+1.0.0.DR1",
   "constituents" : [ "group:public" ],
-  "doctype" : "group",
-  "name" : "product+PNC-Product+1.0.0.DR1"
+  "name" : "product+PNC-Product+1.0.0.DR1",
+  "doctype" : "group"
 }
