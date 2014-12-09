@@ -4,6 +4,6 @@
     "changelog" : "adding bintray repo to public group"
   },
   "constituents" : [ "remote:central", "remote:jboss.org-public", "remote:pnc-bintray" ],
-  "doctype" : "group",
-  "name" : "public"
+  "name" : "public",
+  "doctype" : "group"
 }
