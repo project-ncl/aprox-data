@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8">
+<settings>
+
+<!-- 
+This settings.xml for group:build+PNC-Product+1.0.0.DR1+PNC-Project+1418218905349 incorporates the following stores from AProx:
+  * hosted:build+PNC-Product+1.0.0.DR1+PNC-Project+1418218905349
+  * remote:central
+  * remote:jboss.org-public
+  * remote:pnc-bintray
+ -->
+  <localRepository>/root/.m2/repository-group-build+PNC-Product+1.0.0.DR1+PNC-Project+1418218905349</localRepository>
+  <profiles>
+    <profile>
+      <id>aprox-repos</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://repo1.maven.apache.org/maven2/</url>
+          <name>null</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>jboss.org-public</id>
+          <url>https://repository.jboss.org/nexus/content/groups/public</url>
+          <name>public group on Jboss.org Nexus repository</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>pnc-bintray</id>
+          <url>http://dl.bintray.com/rnc/maven</url>
+          <name>holds forked versions of things for pnc app that we need for the demo</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central-plugins</id>
+          <url>http://repo1.maven.apache.org/maven2/</url>
+          <name>null - PluginRepository</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>jboss.org-public-plugins</id>
+          <url>https://repository.jboss.org/nexus/content/groups/public</url>
+          <name>public group on Jboss.org Nexus repository - PluginRepository</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>pnc-bintray-plugins</id>
+          <url>http://dl.bintray.com/rnc/maven</url>
+          <name>holds forked versions of things for pnc app that we need for the demo - PluginRepository</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <!-- TODO: Not sure how to detect this... -->
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>aprox-repos</activeProfile>
+  </activeProfiles>
+</settings>
