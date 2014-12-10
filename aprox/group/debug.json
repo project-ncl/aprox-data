@@ -1,9 +1,0 @@
-{
-  "key" : "group:debug",
-  "metadata" : {
-    "changelog" : "adding debug group."
-  },
-  "constituents" : [ "group:public", "hosted:local-deployments" ],
-  "doctype" : "group",
-  "name" : "debug"
-}
