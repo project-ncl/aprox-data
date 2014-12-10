@@ -1,0 +1,8 @@
+{
+  "key" : "hosted:build+PNC-Product+1.0.0.DR1+PNC-Project+1418215620028",
+  "snapshotTimeoutSeconds" : 0,
+  "doctype" : "hosted",
+  "name" : "build+PNC-Product+1.0.0.DR1+PNC-Project+1418215620028",
+  "allow_snapshots" : true,
+  "allow_releases" : true
+}
