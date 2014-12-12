@@ -1,0 +1,8 @@
+{
+  "key" : "hosted:product+PNC-Product+1.0.0.DR1",
+  "snapshotTimeoutSeconds" : 0,
+  "doctype" : "hosted",
+  "name" : "product+PNC-Product+1.0.0.DR1",
+  "allow_snapshots" : true,
+  "allow_releases" : true
+}

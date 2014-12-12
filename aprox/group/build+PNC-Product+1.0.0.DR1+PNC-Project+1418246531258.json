@@ -1,0 +1,6 @@
+{
+  "key" : "group:build+PNC-Product+1.0.0.DR1+PNC-Project+1418246531258",
+  "constituents" : [ "hosted:build+PNC-Product+1.0.0.DR1+PNC-Project+1418246531258", "group:product+PNC-Product+1.0.0.DR1" ],
+  "doctype" : "group",
+  "name" : "build+PNC-Product+1.0.0.DR1+PNC-Project+1418246531258"
+}
